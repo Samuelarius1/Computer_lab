@@ -1,0 +1,53 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Computer Lab System</title>
+		<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <link rel="stylesheet" href="styles/index.css">
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="header">
+				<img src="budge.jpeg" alt="School Badge" />
+				<h1>Computer Lab System</h1>
+			</div>
+
+			<form action="php/index.php" method="POST">
+				<table>
+					<tr>
+						<th>ID Number</th>
+						<td><input type="text" id="student-id" name="student-id" placeholder="Enter ID" required></td>
+						<th>Date</th>
+						<td><input type="date" id="date" name="date" required></td>
+					</tr>
+					<tr>
+						<th>Name</th>
+						<td><input type="text" id="student-name" name="student-name" placeholder="Enter Name" required></td>
+						<th>Time</th>
+						<td><input type="time" id="time" name="time" required></td>
+					</tr>
+					<tr>
+						<th>Class</th>
+						<td><input type="text" id="student-class" name="student-class" placeholder="Enter Class" required></td>
+						<th>Return Date</th>
+						<td><input type="date" id="return-date" name="return-date" required></td>
+					</tr>
+					<tr>
+						<th>Return Time</th>
+						<td><input type="time" id="return-time" name="return-time" required></td>
+						<th>Teacher's Affirmation</th>
+						<td><input type="checkbox" id="affirmation" name="affirmation"> I affirm</td>
+					</tr>
+				</table>
+			
+				<button class="submit-btn" type="submit">Submit</button>
+			</form>
+			
+		<script src="java/index.js"></script>
+	</body>
+</html>
